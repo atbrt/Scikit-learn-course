@@ -15,9 +15,10 @@ _=penguinsnum.hist(figsize=(20, 14))
 plt.show()
 
 n_samples_to_plot = 5000
-columns = ["Culmen Length (mm), "hours-per-week"]
+columns = ["Culmen Length (mm)", "Culmen Depth (mm)"]
+target_column="Species"
 _ = sns.pairplot(
-    data=adult_census[:n_samples_to_plot],
+    data=penguins[:n_samples_to_plot],
     vars=columns,
     hue=target_column,
     plot_kws={"alpha": 0.2},
@@ -25,4 +26,4 @@ _ = sns.pairplot(
     diag_kind="hist",
     diag_kws={"bins": 30},
 )
-
+plt.show()
