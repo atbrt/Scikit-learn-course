@@ -1,3 +1,3 @@
 import pandas as pd
-penguins=pd.read_csv("penguins_classification.csv")
+penguins=pd.read_csv("bases de données/penguins_classification.csv")
 
