@@ -14,3 +14,15 @@ penguinsnum=penguins.select_dtypes(include=['number'])
 _=penguinsnum.hist(figsize=(20, 14))
 plt.show()
 
+n_samples_to_plot = 5000
+columns = ["Culmen Length (mm), "hours-per-week"]
+_ = sns.pairplot(
+    data=adult_census[:n_samples_to_plot],
+    vars=columns,
+    hue=target_column,
+    plot_kws={"alpha": 0.2},
+    height=3,
+    diag_kind="hist",
+    diag_kws={"bins": 30},
+)
+
