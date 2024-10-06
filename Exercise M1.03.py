@@ -1,3 +1,4 @@
+#This exercice's purpose is to show how machine learning algorithms are efficient compared to a constant target model.
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.dummy import DummyClassifier
